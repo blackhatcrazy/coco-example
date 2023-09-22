@@ -1,0 +1,9 @@
+my:
+  fav:
+    values:
+    - are
+    - all
+    - here
+least:
+  favorite:
+    values: allTheRest

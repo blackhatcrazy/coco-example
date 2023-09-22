@@ -1,0 +1,4 @@
+type: environment
+name: source2
+values:
+  - source-2.yaml
