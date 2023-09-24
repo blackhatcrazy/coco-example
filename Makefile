@@ -19,13 +19,7 @@ cleanup: ## remove temporary folders (dist/)
 
 .PHONY: reconcile-reset
 reconcile-reset: ## resets the repository changes for a new reconciliation example
-	git checkout main
-	git reset --hard origin/main
-	rm -rf new-file-from-branch
-	git switch -c branch-to-reconcile
-	git reset --hard origin/main
-	touch new-file-from-branch
-	git push --force
+	./tmp/reconcile-reset.sh
 	
 
 
