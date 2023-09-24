@@ -19,7 +19,7 @@ cleanup: ## remove temporary folders (dist/)
 
 .PHONY: reconcile-reset
 reconcile-reset: ## resets the repository changes for a new reconciliation example
-	./tmp/reconcile-reset.sh
+	./hack/reconcile-reset.sh
 	
 
 
