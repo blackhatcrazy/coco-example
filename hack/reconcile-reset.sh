@@ -27,7 +27,7 @@ function main() {
   git touch "${main_file}"
   git add "${main_file}"
   git commit -m "add file in main"
-	git push --force
+	git push
 
 }
 
