@@ -22,7 +22,7 @@ reconcile-reset: ## resets the repository changes for a new reconciliation examp
 	git checkout main
 	git reset --hard origin/main
 	rm -rf new-file-from-branch
-	git checkout -b branch-to-reconcile
+	git switch -c branch-to-reconcile
 	git reset --hard origin/main
 	touch new-file-from-branch
 	git push --force
