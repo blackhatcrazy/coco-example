@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 repo="https://github.com/SAP/configuration-tools-for-gitops"
-version="v2.1.0"
+version="v2.2.2"
 
 
 target="dist"

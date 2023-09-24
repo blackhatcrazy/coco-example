@@ -13,7 +13,9 @@ install-coco: ## install the coco binary for the current architecture (result is
 
 .PHONY: cleanup
 cleanup: ## remove temporary folders (dist/)
-	rm -r dist
+	rm -rf dist
+	rm -rf tmp
+	mkdir -p tmp
 
 
 .PHONY: help
