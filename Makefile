@@ -17,6 +17,17 @@ cleanup: ## remove temporary folders (dist/)
 	rm -rf tmp
 	mkdir -p tmp
 
+.PHONY: reconcile-reset
+reconcile-reset: ## resets the repository changes for a new reconciliation example
+	git checkout main
+	git reset --hard origin/main
+	rm -rf new-file-from-branch
+	git checkout -b branch-to-reconcile
+	git reset --hard origin/main
+	touch new-file-from-branch
+	git push --force
+	
+
 
 .PHONY: help
 help:
