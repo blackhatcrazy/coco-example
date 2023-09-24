@@ -16,6 +16,10 @@ function main() {
 	git reset --hard origin/main
 	rm -rf "${new_file}"
   rm -rf "${main_file}"
+  git add .
+  git commit -m "cleanup reconciliation"
+  git push
+  
 	git switch "${reconcile_branch}" 2>/dev/null || git switch  "${reconcile_branch}"
 	git reset --hard origin/main
 	touch "${new_file}"
