@@ -25,6 +25,7 @@ function main() {
 	git switch "${reconcile_branch}" 2>/dev/null || git switch  "${reconcile_branch}"
 	git reset --hard origin/main
 	touch "${new_file}"
+  echo "content from branch" > "${new_file}"
   git add "${new_file}"
   git commit -m "add file in branch"
 	git push --force
