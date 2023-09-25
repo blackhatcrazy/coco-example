@@ -1,3 +1,7 @@
 least:
   favorite:
     values: overwrite
+my:
+  fav:
+    values:
+      - overwrite
