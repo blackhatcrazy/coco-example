@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 
-tmp="tmp"
+tmp_location=""${HOME}/src/github.com/example""
+
 
 function main() {
   tld=$(git rev-parse --show-toplevel)
@@ -9,6 +10,7 @@ function main() {
   tmp_dir="${tld}/${tmp}/${script_dir}"
 
 
+  rm -rf "${tmp_location}"
   reconcile_branch="branch-to-reconcile"
   new_file="branch-to-reconcile"
   main_file="new-file-in-main"

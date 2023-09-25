@@ -32,7 +32,7 @@ dist/coco dependencies \
   --source-branch pr-example \
   --target-branch main \
   -u https://github.com/blackhatcrazy/coco-example.git \
-  -p $(pwd)/tmp/coco-example
+  -p "${HOME}/src/github.com/example"
 ```
 
 ### reconcile
@@ -43,6 +43,6 @@ dist/coco reconcile \
   --target main \
   --owner blackhatcrazy \
   --repository coco-example \
-  -p ./../coco-example/tmp \
-  -u https://github.com/blackhatcrazy/coco-example
+  -u https://github.com/blackhatcrazy/coco-example \
+  -p "${HOME}/src/github.com/example"
 ```
